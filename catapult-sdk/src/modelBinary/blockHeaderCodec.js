@@ -44,10 +44,10 @@ const blockHeaderCodec = {
 		blockHeader.stateHash = parser.buffer(constants.sizes.hash256);
 		blockHeader.beneficiaryAddress = parser.buffer(constants.sizes.addressDecoded);
 		blockHeader.feeMultiplier = parser.uint32();
-		blockHeader.totalSupply = parser.uint64();
-		blockHeader.feeToPay = parser.uint64();
-		blockHeader.inflation = parser.uint64();
 		blockHeader.collectedEpochFees = parser.uint64();
+		blockHeader.feeToPay = parser.uint64();
+		blockHeader.totalSupply = parser.uint64();
+		blockHeader.inflation = parser.uint64();
 		return blockHeader;
 	},
 

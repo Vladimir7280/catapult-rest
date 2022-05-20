@@ -267,11 +267,10 @@ describe('model schema builder', () => {
 				'blockHeader.harvestingEligibleAccountsCount',
 				'blockHeader.totalVotingBalance',
 				'blockHeaderMetadata.totalFee',
-				'blockHeader.totalSupply',
-				'blockHeader.feeToPay',
-				'blockHeader.inflation',
 				'blockHeader.collectedEpochFees',
-				
+				'blockHeader.feeToPay',
+				'blockHeader.totalSupply',
+				'blockHeader.inflation',
 
 				'finalizedBlock.height',
 				'finalizationProof.height',

@@ -60,10 +60,10 @@ class ModelSchemaBuilder {
 				beneficiaryAddress: ModelType.encodedAddress,
 				feeMultiplier: ModelType.uint32,
 				//new blocks
-				totalSupply: ModelType.uint64,
-				feeToPay: ModelType.uint64,
-				inflation: ModelType.uint64,
 				collectedEpochFees: ModelType.uint64,
+				feeToPay: ModelType.uint64,
+				totalSupply: ModelType.uint64,
+				inflation: ModelType.uint64,
 				//end new block
 				// optional. How to create subclasses?
 				votingEligibleAccountsCount: ModelType.uint32,
@@ -144,10 +144,10 @@ class ModelSchemaBuilder {
 				index: ModelType.int,
 				timestamp: ModelType.uint64,
 				feeMultiplier: ModelType.uint32,
-				totalSupply: ModelType.uint64,
+				collectedEpochFees: ModelType.uint64,
 				feeToPay: ModelType.uint64,
-				inflation: ModelType.uint64,
-				collectedEpochFees: ModelType.uint64
+				totalSupply: ModelType.uint64,
+				inflation: ModelType.uint64
 			},
 			transactionWithMetadata: {
 				id: ModelType.objectId,
