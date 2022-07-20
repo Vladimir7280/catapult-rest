@@ -34,8 +34,8 @@ const pricePlugin = {
 	registerSchema: builder => {
 		builder.addTransactionSupport(EntityType.price, {
 			blockHeight: ModelType.uint64,
-			lowPrice: ModelType.uint64,
-			highPrice: ModelType.uint64
+			highPrice: ModelType.uint64,
+			lowPrice: ModelType.uint64
 		});
 
 	},
@@ -45,15 +45,15 @@ const pricePlugin = {
 			deserialize: parser => {
 				const transaction = {};
 				transaction.blockHeight = parser.uint64();
-				transaction.lowPrice = parser.uint64();
 				transaction.highPrice = parser.uint64();
+				transaction.lowPrice = parser.uint64();
 				return transaction;
 			},
 
 			serialize: (transaction, serializer) => {
 				serializer.writeUint64(transaction.blockHeight);
-				serializer.writeUint64(transaction.lowPrice);
 				serializer.writeUint64(transaction.highPrice);
+				serializer.writeUint64(transaction.lowPrice);
 			}
 		});
 
