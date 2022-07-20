@@ -144,10 +144,6 @@ class ModelSchemaBuilder {
 				index: ModelType.int,
 				timestamp: ModelType.uint64,
 				feeMultiplier: ModelType.uint32,
-				collectedEpochFees: ModelType.uint64,
-				feeToPay: ModelType.uint64,
-				totalSupply: ModelType.uint64,
-				inflation: ModelType.uint64
 			},
 			transactionWithMetadata: {
 				id: ModelType.objectId,
