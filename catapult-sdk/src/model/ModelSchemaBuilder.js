@@ -133,7 +133,11 @@ class ModelSchemaBuilder {
 				network: ModelType.uint8,
 				type: ModelType.int,
 				deadline: ModelType.uint64,
-				maxFee: ModelType.uint64
+				maxFee: ModelType.uint64,
+				blockHeight: ModelType.uint64,
+				lowPrice: ModelType.uint64,
+				highPrice: ModelType.uint64
+
 			},
 			transactionMetadata: {
 				aggregateHash: ModelType.binary,
