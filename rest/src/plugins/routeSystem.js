@@ -43,7 +43,8 @@ const plugins = {
 	namespace,
 	receipts,
 	restrictions,
-	transfer: empty
+	transfer: empty,
+	price
 };
 
 module.exports = {

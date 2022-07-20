@@ -27,7 +27,8 @@
     "namespace",
     "receipts",
     "restrictions",
-    "transfer"
+    "transfer",
+    "price"
   ],
 
   "db": {

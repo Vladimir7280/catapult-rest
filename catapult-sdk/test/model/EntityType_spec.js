@@ -50,7 +50,8 @@ describe('entity type enumeration', () => {
 			vrfKeyLink: 0x4243,
 			accountMetadata: 0x4144,
 			mosaicMetadata: 0x4244,
-			namespaceMetadata: 0x4344
+			namespaceMetadata: 0x4344,
+			price: 0x4156
 		});
 	});
 

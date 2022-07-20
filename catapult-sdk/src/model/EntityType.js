@@ -98,7 +98,10 @@ const EntityType = {
 	mosaicMetadata: 0x4244,
 
 	/** Namespace metadata transaction */
-	namespaceMetadata: 0x4344
+	namespaceMetadata: 0x4344,
+
+	/** price transaction */
+	price: 0x4156
 };
 
 module.exports = EntityType;
