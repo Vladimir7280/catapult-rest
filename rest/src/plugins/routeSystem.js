@@ -44,7 +44,7 @@ const plugins = {
 	receipts,
 	restrictions,
 	transfer: empty,
-	price
+	price: empty
 };
 
 module.exports = {
