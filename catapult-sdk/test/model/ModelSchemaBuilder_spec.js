@@ -271,6 +271,7 @@ describe('model schema builder', () => {
 				'blockHeader.feeToPay',
 				'blockHeader.totalSupply',
 				'blockHeader.inflation',
+				'blockHeader.inflationMultiplier',
 
 				'finalizedBlock.height',
 				'finalizationProof.height',

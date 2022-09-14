@@ -48,6 +48,7 @@ const blockHeaderCodec = {
 		blockHeader.feeToPay = parser.uint64();
 		blockHeader.totalSupply = parser.uint64();
 		blockHeader.inflation = parser.uint64();
+		blockHeader.inflationMultiplier = parser.uint64();
 		return blockHeader;
 	},
 
@@ -73,6 +74,7 @@ const blockHeaderCodec = {
 		serializer.writeUint64(blockHeader.feeToPay);
 		serializer.writeUint64(blockHeader.inflation);
 		serializer.writeUint64(blockHeader.collectedEpochFees);
+		serializer.writeUint64(blockHeader.inflationMultiplier);
 	}
 };
 

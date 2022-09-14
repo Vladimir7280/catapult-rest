@@ -64,6 +64,7 @@ class ModelSchemaBuilder {
 				feeToPay: ModelType.uint64,
 				totalSupply: ModelType.uint64,
 				inflation: ModelType.uint64,
+				inflationMultiplier: ModelType.uint64,
 				//end new block
 				// optional. How to create subclasses?
 				votingEligibleAccountsCount: ModelType.uint32,
